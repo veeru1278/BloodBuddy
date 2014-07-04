@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_b6" >
+
+    <Button
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Create Account"
+         android:background="#178e85"
+        android:textColor="#ffffff" 
+        
+         />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editTextPassword"
+        android:layout_marginTop="46dp"
+        android:background="#188e85"
+        android:ems="10"
+        android:hint="User Name"
+        android:gravity="center"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="#188e85"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#ffffff"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="33dp"
+        android:background="#188e85"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:gravity="center"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
